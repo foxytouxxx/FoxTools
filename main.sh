@@ -36,10 +36,10 @@ install_neofetch() {
 }
 
 install_openjdk() {
-    echo "Installing OpenJDK 17..."
-    wget https://download.java.net/java/GA/jdk17/0d483333a00540d886896bac774ff48b/35/GPL/openjdk-17_linux-x64_bin.tar.gz
+    echo "Installing OpenJDK 22..."
+    wget https://download.java.net/java/GA/jdk22.0.1/c7ec1332f7bb44aeba2eb341ae18aca4/8/GPL/openjdk-22.0.1_linux-x64_bin.tar.gz
     tar -xzvf openjdk-17_linux-x64_bin.tar.gz
-    echo "Setting environment variables for OpenJDK 17..."
+    echo "Setting environment variables for OpenJDK 22..."
     echo "export JAVA_HOME=$(pwd)/jdk-17" >> ~/.bashrc
     echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
@@ -68,7 +68,7 @@ echo "Select the package to install:"
 echo "1) Python"
 echo "2) Conda"
 echo "3) Neofetch"
-echo "4) OpenJDK 17"
+echo "4) OpenJDK 22"
 
 read -rp "Enter your choice [1-4]: " choice
 
