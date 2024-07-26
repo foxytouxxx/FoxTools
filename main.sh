@@ -26,7 +26,8 @@ install_conda() {
 
 install_neofetch() {
     echo "Installing Neofetch..."
-    echo "Note: neofetch is discontinued. You want to use it?"
+    echo "Note: neofetch is discontinued. You want to use it? press any key for yes. Ctrl+C for no"
+    pause
     git clone https://github.com/dylanaraps/neofetch.git
     cd neofetch || exit
     make install PREFIX=$HOME/.local
